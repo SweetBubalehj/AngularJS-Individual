@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Moldova Truck</title>
+    <link rel="shortcut icon" href="src/images/headerLogo.png">
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+
+<body ng-app="myApp" ng-controller="truckCtrl" ng-init="myText='Welcome!'">
+    <header>
+        <div>
+            <ul>
+                <li><img src="src/images/headerLogo.png" alt="Truck"></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="trucks.html">Грузовые перевозки</a></li>
+                <li><a href="reviews.html">Оставить отзыв</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+        <h2>Добро Пожаловать!</h2><hr>
+        <a>Грузоперевозки из Молдовы по Европе.
+            Выполняем профессиональные грузоперевозки для частных лиц и организаций, по доступным ценам.
+            Предоставляем услуги транспортa для перевозки крупныхногабаритных грузов: авто, продукты, электроника, одежда, обувь.</a><br>
+        <video autoplay muted loop>
+            <source src="src/videos/1.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+            <source src="src/videos/2.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+            <source src="src/videos/3.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+            <source src="src/videos/4.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="copyright">© 2022 Copyright:
+        <a href="index.html">Moldova Truck</a>
+    </div>
+
+    <script src="src/modalTruck.js"></script>
+    <script src="src/myApp.js"></script>
+    <script src="src/truckCTRL.js"></script>
+</body>

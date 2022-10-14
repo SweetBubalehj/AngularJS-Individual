@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 200px;
+    margin: 0 auto;
+    background: rgb(254, 148, 0);
+    background: linear-gradient(22deg, rgba(254, 148, 0, 1) 11%, rgba(255, 255, 255, 1) 59%, rgba(0, 67, 196, 1) 91%);
+    text-align: center;
+    width: 100%;
+}
+
+header div {
+    margin-left: 240px;
+}
+
+header ul li {
+    margin-top: 60px;
+    list-style: none;
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+    color: black;
+    background-color: white;
+    font-size: 35px;
+    border: 1px solid black;
+}
+
+header ul li a:hover {
+    background-color: rgba(223, 223, 223, 0.384);
+}
+
+header ul li img {
+    position: absolute;
+    margin-left: -280px;
+    margin-top: -140px;
+}
+
+header button {
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+    color: black;
+    background-color: white;
+    font-size: 35px;
+    border: 1px solid black;
+}
+
+header button:hover {
+    background-color: rgba(223, 223, 223, 0.384);
+}
+
+hr {
+    border: 1px solid black;
+    background-color: black;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 60%, rgba(255, 128, 0, 1) 100%);
+    position: relative;
+    margin: auto;
+    padding: 15px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-content input[type="text"],
+input[type="password"] {
+    margin: 15px auto;
+    width: 70%;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.modal-content input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: rgba(223, 223, 223, 0.384);
+}
+
+.modal-content input[type="submit"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font: bold;
+    height: 50px;
+    width: 150px;
+    margin: 15px auto;
+    border: 1px solid;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.modal-content input[type="submit"]:hover {
+    background-color: rgba(223, 223, 223, 0.384);
+    cursor: pointer;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.routes {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 82%, rgba(255, 128, 0, 1) 100%);
+    margin: 50px auto;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.routes td input::placeholder {
+    color: black;
+}
+
+.routes td,
+td input {
+    height: 56px;
+    width: 180px;
+    font-size: 25px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.routes td {
+    border-bottom: 1px solid;
+}
+
+.routes button {
+    cursor: pointer;
+}
+
+.no-border td {
+    border: 0;
+}
+
+.no-background td button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+
+.not-high td {
+    height: 24px;
+}
+
+.add-button {
+    font-size: 24px;
+    width: 50%;
+}
+
+.calculator {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(220deg, rgba(255, 255, 255, 1) 55%, rgba(255, 128, 0, 1) 100%);
+    margin: 50px auto;
+    width: 927px;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.calculator a {
+    margin: 0 auto;
+    width: 70%;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid;
+}
+
+.calculator a b {
+    color: rgba(226, 87, 0, 0.667);
+}
+
+.calculator input {
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    color: rgba(226, 87, 0, 0.667);
+    font-weight: bold;
+}
+
+.container {
+    margin: 50px auto;
+    width: 700px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 40%, rgba(255, 128, 0, 1) 100%);
+    padding: 20px;
+}
+
+.container input[type=submit] {
+    background-color: #ff8400;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 595px;
+}
+
+.container input[type=submit]:hover {
+    background-color: #004bc4;
+}
+
+.container input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.copyright{
+    width: 300px;
+    margin: 50px auto;
+}
+
+.copyright a{
+    color: black;
+    text-decoration: none;
+}
+
+.main{
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 85%, rgba(255, 128, 0, 1) 100%);
+    text-align: center;
+    margin: 50px auto;
+    width: 1285px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.main a{
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    display: inline-block;
+}
+.main video{
+    width: 640px;
+}

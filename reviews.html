@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Moldova Truck</title>
+    <link rel="shortcut icon" href="src/images/headerLogo.png">
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+
+<body ng-app="myApp" ng-controller="truckCtrl" ng-init="myText='Welcome!'">
+    <header>
+        <div>
+            <ul>
+                <li><img src="src/images/headerLogo.png" alt="Truck"></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="trucks.html">Грузовые перевозки</a></li>
+                <li><a href="reviews.html">Оставить отзыв</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <form>
+
+            <label for="fname">Имя</label>
+            <input type="text" id="fname" name="firstname" placeholder="Введите ваше имя..">
+
+            <label for="lname">Фамилия</label>
+            <input type="text" id="lname" name="lastname" placeholder="Введите вашу фамилию..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="md">Молдова</option>
+                <option value="ro">Румыния</option>
+                <option value="ua">Украина</option>
+                <option value="ru">Россия</option>
+                <option value="br">Болгария</option>
+                <option value="tr">Турция</option>
+                <option value="pl">Пальша</option>
+            </select>
+
+            <label for="subject">Отзыв</label>
+            <textarea id="subject" name="subject" placeholder="Введите ваше мнение.." style="height:200px"></textarea>
+
+            <input type="submit" value="Отправить">
+
+        </form>
+    </div>
+
+    <div class="copyright">© 2022 Copyright:
+        <a href="index.html">Moldova Truck</a>
+    </div>
+
+    <script src="src/modalTruck.js"></script>
+    <script src="src/myApp.js"></script>
+    <script src="src/truckCTRL.js"></script>
+</body>
